@@ -20,7 +20,11 @@ function remove_item() {
 	
 	if (Number(score) === 6) {
 		Winner.style.display = 'flex';
-		Message.style = 'display: block; width: 300px;';
+		Message.style = 'display: block; width: 325px;';
+		setTimeout(() => {
+			Message.style.display = 'none';
+		}, 15000);
+		score = 0;
 	}
 }
 setInterval(remove_item, 150);
