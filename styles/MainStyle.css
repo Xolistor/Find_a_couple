@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	background-color: rgb(54, 58, 56);
+	color: white;
+	font-family: 'El Messiri', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.body-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.body-container h1 {
+	position: absolute;
+	top: 2.5%;
+}
+.container {
+	display: grid;
+	width: 90vmin;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 8px;
+}
+.item {
+	background-color: azure;
+	border-radius: 12px;
+	padding: 6%;
+	display: flex;
+	transition: .5s;
+	cursor: pointer;
+	user-select: none;
+}
+.item img {
+	border-radius: 6px;
+	max-width: 100%;
+	height: auto;
+	transition: .5s;
+}
+.itemClon {
+	background-color: azure;
+	border-radius: 12px;
+	padding: 6%;
+	display: flex;
+	transition: .5s;
+	cursor: pointer;
+	user-select: none;
+	display: none;
+}
+.itemClon img {
+	border-radius: 6px;
+	max-width: 100%;
+	height: auto;
+	transition: .5s;
+}
+.body-container h3 {
+	position: absolute;
+	bottom: 5%;
+}
+.info {
+	z-index: 3;
+	display: flex;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+}
+.info-text {
+	max-width: 85%;
+	padding-left: 5%;
+	padding-right: 5%;
+	height: 75%;
+	overflow: auto;
+}
+.info-text::-webkit-scrollbar {
+	background-color: rgba(0, 0, 0, 0);
+	width: 8px;
+}
+.info-text::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 4px;
+}
+#bk-info {
+	background-color: rgba(0, 0, 0, 0.95);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 2;
+}
+.winner {
+	z-index: 2;
+	display: none;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.95);
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	user-select: none;
+}
+.winner-text {
+	width: 85%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+p {
+	font-size: 20px;
+}
+mark {
+	border-radius: 8px;
+}
+.message {
+	background-color: rgba(255, 255, 255, 0.95);
+	color: black;
+	height: 215px;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	border-radius: 16px;
+	padding: 15px;
+	transition: .5s;
+	overflow: hidden;
+	display: none;
+	z-index: 5; 
+}
+.message-text {
+	overflow: auto;
+	height: 85%;
+}
+.message-text::-webkit-scrollbar {
+	background-color: rgba(0, 0, 0, 0);
+	width: 4px;
+}
+.message-text::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.35);
+	border-radius: 4px;
+}

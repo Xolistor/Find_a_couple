@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="ico/black-bird-icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="styles/MainStyle.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+
+	<title>Найди пару</title>
+</head>
+<body>
+	<div id="bk-info"></div>
+	<div class="info" id="info">
+		<div class="info-text">
+			<h1>Информация</h1>
+			<p>Сразу хочу сказать, что у меня есть баг: 1. Если собрать первую пару, а именно первой карточке найти пару, то произойдёт баг из-за которого вы не сможете продолжить играть... Не рекомендуется открывать в первый раз первую карточку. Для первой карточки можно найти пару, когда будут найденны остальные пары и тогда вы сможете выйграть ^_^ 2.Желательно не нажимать по 2-ой раз на открытую карточку, будет баг из-за которого вы не сможете продолжить играть ಥ_ಥ Извиняюсь за неудобства, сейчас работую над этим багом. Чтобы исправить данный баг нужно переписывать логику программы, но я постараюсь сделать фишку, чтобы сделать игру более приятней ╰(*°▽°*)╯ <br> <br><br><cite>Чтобы начать играть просто нажмите на любое место</cite>
+			</p>
+		</div>
+	</div>
+	<div class="winner">
+		<div class="winner-text">
+			<h1>Поздравляем!</h1>
+			<p>Вы собрали все пары животных, поэтому вы открыли достижение <mark>"Молодчина"</mark></p>
+		</div>
+	</div>
+	<div class="body-container">
+		<h1>Найди пару</h1>
+		<div class="container">
+			
+		</div>
+		<h3 class="score">Найдено пар: 0</h3>
+	</div>
+
+	<div class="message">
+		<h3>Молодчина</h3>
+		<div class="message-text">
+			<p>Достижение за все найденные пары! Это достижение получают только самые могущественные войны, которым было предначертано самой судьбой (⌐■_■)</p>
+	</div>
+	</div>
+
+	<script defer type="module" src="scripts/main.js"></script>
+	<script defer type="module" src="scripts/imgs.js"></script>
+	<script defer type="module" src="scripts/remove_item.js"></script>
+</body>
+</html>
